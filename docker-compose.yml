@@ -1,0 +1,11 @@
+version: 3
+
+services:
+  app:
+    image: smart-home-object-detection:latest
+    volumes:
+      - .:/usr/src/app
+      - vscode:/root/.vscode-remote
+
+volumes:
+  vscode:
